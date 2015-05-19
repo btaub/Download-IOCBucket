@@ -31,7 +31,7 @@ def process_sub_dirs(thepath=''):
         f_str = ''
         for l in lpath:
             f_str += l + '/'
-            if not os.path.isdir(f_str[:-1]):
+            if not os.path.isdir(ioc_data_path +'/'+ f_str[:-1]):
                 os.mkdir(ioc_data_path +'/'+ f_str[:-1])
 
 def main(ioc_data_path):
